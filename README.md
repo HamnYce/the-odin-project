@@ -27,13 +27,12 @@ The Odin Project is divided into several main sections:
 
 ## Projects
 
-Throughout the curriculum, I have completed various projects to apply the concepts learned. Each project is stored in its respective directory and includes a README file with detailed information about the project, its purpose, and how to run it.
+Throughout the curriculum, I have completed various projects to apply the concepts learned. (almost) Every project is stored in its respective directory and includes a README file with information about the project, its purpose.
 
 ### Example Projects
 
 - **Google Homepage Clone**: A replica of Google's homepage to practice HTML and CSS.
 - **Rock Paper Scissors**: A simple game to practice JavaScript.
-- **Ruby on Rails Blog**: A full-featured blog application built with Ruby on Rails.
 
 ## Exercises
 
