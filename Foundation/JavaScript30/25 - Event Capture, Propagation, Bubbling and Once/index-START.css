@@ -1,0 +1,24 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after { 
+    box-sizing: inherit; 
+}
+
+div {
+    width: 100%;
+    padding: 100px;
+}
+
+.outer {
+    background: thistle;
+}
+
+.middle {
+    background: mistyrose;
+}
+
+.inner {
+    background: coral;
+}

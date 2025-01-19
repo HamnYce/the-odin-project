@@ -1,0 +1,94 @@
+@font-face {
+    font-family: "digital-7";
+    src: url("digital-7/digital-7-mono.ttf");
+}
+
+body {
+    background-color: #0e3247;
+}
+
+#main {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#calc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 490px;
+    border: 5px solid #efd6ac;
+    border-radius: 1%;
+}
+
+
+#calc-display {
+    font-family: "digital-7";
+    background-color: rgb(171, 171, 173);
+    height: 18%;
+    width: 100%;
+    font-size: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#calc-body {
+    border-top: 6px solid rgb(30, 30, 30);
+    background-color: #c44900;
+    height: 82%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#calc-numbers-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    column-gap: -2;
+}
+
+.calc-input,.calc-clear {
+    border: 0;
+    border-right: 2px solid rgb(30, 30, 30);
+    border-bottom: 2px solid rgb(30, 30, 30);
+    background-color: #c44900;
+    font-size: 3rem;
+}
+
+#calc-operators-container {
+    display: grid;
+}
+.operator-color,#equalsButton {
+    background-color: #57a381;
+}
+#negativeButton {
+    background-color: #75405b;
+}
+.calc-input:hover,#negativeButton:hover,#equalsButton:hover,#allClearButton:hover {
+    background: rgb(63, 94, 151);
+}
+.calc-input:active,.operator-color:active,#equalsButton:active,#negativeButton:active {
+    background-color: rgb(47, 71, 116);
+    color:black;
+}
+
+#footer {
+    background-color: rgb(93, 93, 112);
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    text-align: right;
+    border-top: 1px solid rgb(53, 53, 62);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:small;
+}

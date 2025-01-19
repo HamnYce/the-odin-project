@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    background-color: rgb(243, 124, 26);
+    width: 500px;
+    height: 20px;
+    box-shadow: 0px 1px 3px 1px rgb(164, 74, 74);
+    color: white;
+}
+#main-container {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    background-color: springgreen;
+}
+.outer-div {
+    display: flex;
+    height: 100%;
+}
+.inner-div {
+    background-color: pink;
+    /* border:1px solid black; */
+    width: 100%;
+}

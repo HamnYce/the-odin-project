@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/results.css">
+    <title>Results Page</title>
+</head>
+<body>
+    <header id="header" >
+        <div id="top-header">
+            <div id="logo-form-container">
+                <a href="index.html" title="homepage">
+                    <img id="google-logo" src="images/google-logo.png" alt="Google Logo">
+                </a>
+                <form id="header-form" action="#">
+                    <label for="search-bar"></label>
+                    <input id="search-bar" type="text" placeholder="" Value="build this webpage">
+                    <a  href="#">
+                        <svg id="x-button" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
+                        </svg>
+                    </a>
+                    <a id="search-button-container" href="#">
+                        <svg id="search-button"focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                        </svg>
+                    </a>
+                    
+                </form>
+            </div>
+            <div id="utility-links-container">
+                <!-- can use negative margin to take it up -->
+                <a class="header-link" href="#">
+                        <svg id="setting-icon-svg" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.85 22.25h-3.7c-.74 0-1.36-.54-1.45-1.27l-.27-1.89c-.27-.14-.53-.29-.79-.46l-1.8.72c-.7.26-1.47-.03-1.81-.65L2.2 15.53c-.35-.66-.2-1.44.36-1.88l1.53-1.19c-.01-.15-.02-.3-.02-.46 0-.15.01-.31.02-.46l-1.52-1.19c-.59-.45-.74-1.26-.37-1.88l1.85-3.19c.34-.62 1.11-.9 1.79-.63l1.81.73c.26-.17.52-.32.78-.46l.27-1.91c.09-.7.71-1.25 1.44-1.25h3.7c.74 0 1.36.54 1.45 1.27l.27 1.89c.27.14.53.29.79.46l1.8-.72c.71-.26 1.48.03 1.82.65l1.84 3.18c.36.66.2 1.44-.36 1.88l-1.52 1.19c.01.15.02.3.02.46s-.01.31-.02.46l1.52 1.19c.56.45.72 1.23.37 1.86l-1.86 3.22c-.34.62-1.11.9-1.8.63l-1.8-.72c-.26.17-.52.32-.78.46l-.27 1.91c-.1.68-.72 1.22-1.46 1.22zm-3.23-2h2.76l.37-2.55.53-.22c.44-.18.88-.44 1.34-.78l.45-.34 2.38.96 1.38-2.4-2.03-1.58.07-.56c.03-.26.06-.51.06-.78s-.03-.53-.06-.78l-.07-.56 2.03-1.58-1.39-2.4-2.39.96-.45-.35c-.42-.32-.87-.58-1.33-.77l-.52-.22-.37-2.55h-2.76l-.37 2.55-.53.21c-.44.19-.88.44-1.34.79l-.45.33-2.38-.95-1.39 2.39 2.03 1.58-.07.56a7 7 0 0 0-.06.79c0 .26.02.53.06.78l.07.56-2.03 1.58 1.38 2.4 2.39-.96.45.35c.43.33.86.58 1.33.77l.53.22.38 2.55z"></path><circle cx="12" cy="12" r="3.5"></circle></svg>
+                </a>
+                <a id="header-link" href="#">
+                        <svg id="nine-dots-svg" class="gb_Ve" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg>
+                </a>
+                <a id="header-link" href="#">
+                    <img id="account-logo" src="images/account-icon-clip-it.png" alt="">
+                </a>
+            </div> 
+        </div>
+        <div id="bottom-header">
+            <nav id="navbar" >
+                <a class="nav-link" href="#">
+                    <svg focusable="false" viewBox="0 0 24 24">
+                        <path fill="#34a853" d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8"></path><path fill="#ea4335" d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6"></path><path fill="#fbbc04" d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6"></path><path fill="#4285f4" d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59"></path>
+                    </svg>
+                    All
+                </a>
+                <a class="nav-link" href="#">
+                        <svg focusable="false" viewBox="0 0 24 24">
+                            <path d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2"></path>
+                        </svg>
+                        News
+                </a>
+                <a class="nav-link" href="#">
+                    <svg focusable="false" viewBox="0 0 24 24">
+                        <path d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5"></path>
+                    </svg>
+                    Videos
+                </a>
+                <a class="nav-link" href="#">
+                    <svg focusable="false" viewBox="0 0 16 16">
+                        <path d="M7.503 0c3.09 0 5.502 2.487 5.502 5.427 0 2.337-1.13 3.694-2.26 5.05-.454.528-.906 1.13-1.358 1.734-.452.603-.754 1.508-.98 1.96-.226.452-.377.829-.904.829-.528 0-.678-.377-.905-.83-.226-.451-.527-1.356-.98-1.959-.452-.603-.904-1.206-1.356-1.734C3.132 9.121 2 7.764 2 5.427 2 2.487 4.412 0 7.503 0zm0 1.364c-2.283 0-4.14 1.822-4.14 4.063 0 1.843.86 2.873 1.946 4.177.468.547.942 1.178 1.4 1.79.34.452.596.99.794 1.444.198-.455.453-.992.793-1.445.459-.61.931-1.242 1.413-1.803 1.074-1.29 1.933-2.32 1.933-4.163 0-2.24-1.858-4.063-4.139-4.063zm0 2.734a1.33 1.33 0 11-.001 2.658 1.33 1.33 0 010-2.658"></path>
+                    </svg>
+                    Maps
+                </a>
+                <a class="nav-link" href="#">
+                    <svg focusable="false" viewBox="0 0 24 24">
+                        <path d="M21.11 2.89A3.02 3.02 0 0 0 18.95 2h-5.8c-.81 0-1.58.31-2.16.89L7.25 6.63 2.9 10.98a3.06 3.06 0 0 0 0 4.32l5.79 5.8a3.05 3.05 0 0 0 4.32.01l8.09-8.1c.58-.58.9-1.34.9-2.16v-5.8c0-.81-.32-1.59-.89-2.16zM20 10.85c0 .28-.12.54-.32.74l-3.73 3.74-4.36 4.36c-.41.41-1.08.41-1.49 0l-2.89-2.9-2.9-2.9a1.06 1.06 0 0 1 0-1.49l8.1-8.1c.2-.2.46-.3.74-.3l5.8-.01A1.05 1.05 0 0 1 20 5.05v5.8zM16 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2"></path>
+                    </svg>
+                    Shopping
+                </a>
+                <a class="nav-link" href="#">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+                    More
+                </a>
+                <a class="nav-link" href="#">
+                    Tools
+                </a>
+            </nav>
+            <!--this span caused some issues with my original skeleton -->
+            <!--the skeleton would have been comletely different had i realized the
+                    interactions early on (the #utility and safe-search could have been
+                    in the same box/container) -->
+            <!--we make do!-->
+            <span id="safe-search">SafeSearch</span>
+        </div>
+
+    </header>
+    <div id="main-container">
+        <div id="view-counter-container">
+            About 107,000,000,000 results (0.1 picoseconds) 
+        </div>
+        <main id="main">
+            <!--creates flex or grid w/ auto-row  
+                main should resize automatically
+                with each extra result div
+            -->
+            <section class="result-wrapper">
+                <!-- should be repeatable and #main should adjust - ad infinitum -->
+                <a href="#" class="result-link-container">
+                    <span class="result-url">https://victor-if.github.io<span class="inner-result-url"> › google-search-results</span>
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg></span>
+                    
+
+                    <span class="result-name">build this webpage - GitHub Pages</span>
+                </a>
+                <p class="result-description">About 122,000,000 results (0.24 seconds). Image result for build 
+                    this webpage ... With zero coding experience,
+                    artist building 180 webpages in 180 days.</p>
+            </section>
+            <section class="result-wrapper">
+                <!-- should be repeatable and #main should adjust - ad infinitum -->
+                <a href="#" class="result-link-container">
+                    <span class="result-url">https://christine-27.github.io<span class="inner-result-url"> › google-homepage</span>
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+                </span>
+                    <span class="result-name">build this webpage - GitHub Pages</span>
+                </a>
+                <p class="result-description">With zero coding experience, artist building 180 webpages . ... days ago, 
+                    having never done any programming in her life, Jennifer Dewalt built her first webpage ...</p>
+            </section>
+            <section class="result-wrapper">
+                <!-- should be repeatable and #main should adjust - ad infinitum -->
+                <a href="#" class="result-link-container">
+                    <span class="result-url">
+                    https://www.websitebuilderexpert.com
+                    <span class="inner-result-url"> › building-websi...</span>
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg></span>
+                    <span class="result-name">How to Build a Website 2021 | A Step by Step Beginner's Guide </span>
+                </a>
+                <p class="result-description">Jul 7, 2021 — Anyone can build a website with the right tools - and the right guide! We'll show you how to make yours in just 9 steps.</p>
+            </section>
+            <section class="result-wrapper">
+                <!-- should be repeatable and #main should adjust - ad infinitum -->
+                <a href="#" class="result-link-container">
+                    <span class="result-url">https://www.squarespace.com
+                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+                    </span>
+                    
+
+                    <span class="result-name">Squarespace: Build a Website – Website Builder</span>
+                </a>
+                <p class="result-description">Squarespace is the all-in-one solution for anyone looking to create a beautiful website. Domains, eCommerce, hosting, galleries, analytics, and 24/7 support ...</p>
+            </section>
+            <section class="result-wrapper">
+                <!-- should be repeatable and #main should adjust - ad infinitum -->
+                <a href="#" class="result-link-container">
+                    <span class="result-url">https://www.pcmag.com<span class="inner-result-url"> › ... › Web Hosting</span>
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+                    </span>
+                    
+
+                    <span class="result-name">How to Create a Website | PCMag</span>
+                </a>
+                <p class="result-description">You can use an online service to create web pages, or build it offline using a desktop software tool. Or, if you're a coding dynamo, use a plain text editor to ...</p>
+            </section>
+            <section class="result-wrapper">
+                <!-- should be repeatable and #main should adjust - ad infinitum -->
+                <a href="#" class="result-link-container">
+                    <span class="result-url">https://neilpatel.com<span class="inner-result-url"> › Blog › Content Marketing</span>
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+                    </span>
+                    
+
+                    <span class="result-name">Build a Website: 6 Steps From 0 to Launch - Neil Patel</span>
+                </a>
+                <p class="result-description">Ready to build a website? Here's step by step guide to building and opimizing your first website including what hosting and CMS to use.</p>
+            </section>
+            <section class="result-wrapper">
+                <!-- should be repeatable and #main should adjust - ad infinitum -->
+                <a href="#" class="result-link-container">
+                    <span class="result-url">https://makeawebsitehub.com
+                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+                    </span>
+                    <span class="result-name">Make a Website in Just 1 Hour With This Easy Guide - 2021</span>
+                </a>
+                <p class="result-description">This site teaches you how to make a website in just 3 easy to follow steps. There's also lots of really useful resources to help you build traffic in 2021.</p>
+            </section>
+            <section class="result-wrapper">
+                <!-- should be repeatable and #main should adjust - ad infinitum -->
+                <a href="#" class="result-link-container">
+                    <span class="result-url">https://websitesetup.org
+                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+                    </span>
+                    
+
+                    <span class="result-name">How to Make a Website | Step-by-Step Guide for Beginners ...</span>
+                </a>
+                <p class="result-description">Apr 21, 2021 — 1. Install WordPress Site · 2. Choose a Theme for Your Site (Free or Premium) · 3. Add Content (Pages and Posts) · 4. Make Sure Your Website is ...</p>
+            </section>
+            <section class="result-wrapper">
+                <!-- should be repeatable and #main should adjust - ad infinitum -->
+                <a href="#" class="result-link-container">
+                    <span class="result-url">https://www.codecademy.com<span class="inner-result-url"> › learn › paths › learn-h...</span>
+                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+                    </span>
+                    
+
+                    <span class="result-name">Build a Website with HTML, CSS, and Github Pages ...</span>
+                </a>
+                <p class="result-description">One of the best ways to start coding is by building websites. Whether you want your team to be empowered to tweak your business's site, hone their web ...</p>
+            </section>
+            <section class="result-wrapper">
+                <!-- should be repeatable and #main should adjust - ad infinitum -->
+                <a href="#" class="result-link-container">
+                    <span class="result-url">https://www.wix.com
+                        <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+                    </span>
+                    
+
+                    <span class="result-name">Wix.com: Free Website Builder | Create a Free Website</span>
+                </a>
+                <p class="result-description">Create a professional website with the Wix website builder. ... Build professional web applications with serverless computing and hassle-free coding.</p>
+            </section>        
+        </main>
+        <div id="related-searches-container">
+            <div id="related-searches">Related Searches
+                <a href="#">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+                </a>
+            </div>
+            <hr>
+            <a href="#" id="best-free-websites">Best website builder
+                <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg>
+            </a>
+            <div id="logos-container">
+                <a class="logo-wrapper" href="#">
+                    <img src="images/logos/logo-1.png" alt="Logo1">
+                    <p>Vordpress</p>
+                </a>
+                <a class="logo-wrapper" href="#">
+                    <img src="images/logos/logo-2.png" alt="Logo2">
+                    <p>Weebly</p>
+                </a>
+                <a class="logo-wrapper" href="#">
+                    <img src="images/logos/logo-3.png" alt="Logo3">
+                    <p>IM Creator</p>
+                </a>
+                <a class="logo-wrapper" href="#">
+                    <img src="images/logos/logo-4.png" alt="Logo4">
+                    <p>Jimdo</p>
+                </a>
+            </div>            
+            <div id="related-search-more-container">
+                <a href="#" id="related-search-more">
+                    <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"></path></svg>
+                    <p>See More</p>
+                </a>
+            </div>
+        </div>
+        <div id="feedback-container">
+            <hr id="feedback"><span>Feedback</span>
+        </div>
+        <div id="extra-links-container">
+            <div class="bubble-row">
+                
+                <div class="bubble"><div class="search-icon-w3"></div>best website builder</div>
+                <div class="bubble"><div class="search-icon-w3"></div>website builder software</div>
+            </div>
+            <div class="bubble-row">
+                <div class="bubble"><div class="search-icon-w3"></div>free website builder</div>
+                <div class="bubble"><div class="search-icon-w3"></div>how to make a website using html</div>
+            </div>
+            <div class="bubble-row">
+                <div class="bubble"><div class="search-icon-w3"></div>how to build a website from scratch</div>
+                <div class="bubble"><div class="search-icon-w3"></div>learn how to build a website</div>
+            </div>
+            <div class="bubble-row">
+                <div class="bubble"><div class="search-icon-w3"></div>how to make a website for free on google</div>
+                <div class="bubble"><div class="search-icon-w3"></div>how to build a website from scratch html</div>
+            </div>
+        </div>
+        <div id="page-links-container">
+            <span>
+                <span class="google-symbol" style="background:url(images/nav_logo321_hr.png) no-repeat;background-position:-24px 0;background-size:167px;width:28px;height:40px;display:block;"></span>
+            </span>
+            <div href="#" class="page-link-wrapper">
+                <span style="background:url(/images/nav_logo321_hr.png) no-repeat;background-position:-53px 0;background-size:167px;width:20px;height:40px;display:block;"></span>
+                <p>1</p>
+            </div>
+            <a href="#" class="page-link-wrapper">
+                <span style="background:url(/images/nav_logo321_hr.png) no-repeat;background-position:-74px 0;background-size:167px;width:20px;height: 40px;display:block;"></span>
+                <p>2</p>
+            </a>
+            <a href="#" class="page-link-wrapper">
+                <span style="background:url(/images/nav_logo321_hr.png) no-repeat;background-position:-74px 0;background-size:167px;width:20px;height: 40px;display:block;"></span>
+                <p>3</p>
+            </a>
+            <a href="#" class="page-link-wrapper">
+                <span style="background:url(/images/nav_logo321_hr.png) no-repeat;background-position:-74px 0;background-size:167px;width:20px;height: 40px;display:block;"></span>
+                <p>4</p>
+            </a>
+            <a href="#" class="page-link-wrapper">
+                <span style="background:url(/images/nav_logo321_hr.png) no-repeat;background-position:-74px 0;background-size:167px;width:20px;height: 40px;display:block;"></span>
+                <p>5</p>
+            </a>
+            <a href="#" class="page-link-wrapper">
+                <span style="background:url(/images/nav_logo321_hr.png) no-repeat;background-position:-74px 0;background-size:167px;width:20px;height: 40px;display:block;"></span>
+                <p>6</p>
+            </a>
+            <a href="#" class="page-link-wrapper">
+                <span style="background:url(/images/nav_logo321_hr.png) no-repeat;background-position:-74px 0;background-size:167px;width:20px;height: 40px;display:block;"></span>
+                <p>7</p>
+            </a>
+            <a href="#" class="page-link-wrapper">
+                <span style="background:url(/images/nav_logo321_hr.png) no-repeat;background-position:-74px 0;background-size:167px;width:20px;height: 40px;display:block;"></span>
+                <p>8</p>
+            </a>
+            <a href="#" class="page-link-wrapper">
+                <span style="background:url(/images/nav_logo321_hr.png) no-repeat;background-position:-74px 0;background-size:167px;width:20px;height: 40px;display:block;"></span>
+                <p>9</p>
+            </a>
+            <a href="#" class="page-link-wrapper">
+                <span style="background:url(/images/nav_logo321_hr.png) no-repeat;background-position:-74px 0;background-size:167px;width:20px;height: 40px;display:block;"></span>
+                <p>10</p>
+            </a>
+            <a href="#" class="page-link-wrapper">
+                <span style="background:url(/images/nav_logo321_hr.png) no-repeat;background-position:-96px 0;background-size:167px;width:71px;height:40px;display:block;"></span>
+                <p class="align-flex-end">Next</p>
+            </a>
+            <!-- Goooooooooooooooogle
+            copy and paste some more after your done -->
+        </div>
+        <div id="unrelated-buttons">
+    
+        </div>
+    </div>
+    
+    <footer id="footer">
+        <div id="top-footer">
+            <a href="#">Address is a nope, NopeVille<span class="light"> - </span><span class="blue">From your location History - Update Location</span></a>
+        </div>
+        
+        <div id="bottom-footer">
+            <a href="#" class="footer-link">Help</a>
+            <a href="#" class="footer-link">Send feedback</a>
+            <a href="#" class="footer-link">Privacy</a>
+            <a href="#" class="footer-link">Terms</a>
+        </div>
+    </footer>
+</body>
+</html>
